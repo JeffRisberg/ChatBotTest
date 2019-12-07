@@ -1,10 +1,10 @@
-package com.company;
+package com.aisera;
 
 import org.junit.Test;
 
 public class Main {
 
-  String theToken;
+  private String theToken;
 
   @Before
   public void login_to_chat_bot() {
@@ -14,7 +14,6 @@ public class Main {
       then().
       statusCode(200).
     // response provides a token, extract it, and sstore into theToken
-
   }
 
   @Test
